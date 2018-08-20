@@ -1,0 +1,13 @@
+---
+label: Test
+hide_body: false
+is_partial: true
+fields:
+- type: list
+  default:
+  - Test3
+  - Test2
+  - Test1
+  label: Hello
+  name: hello
+  description: This is the test field
