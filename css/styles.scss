@@ -1,0 +1,172 @@
+---
+---
+
+@import "materialize/materialize";
+@import "styles/theme";
+@import "styles/header";
+@import "styles/footer";
+
+
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+
+.title {
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  // bottom: 5%;
+  .name {
+    font-size: 10em;
+    text-shadow: 0px 0px 6px black;
+  }
+
+  span {
+    color: black;
+  }
+
+  .green-text {
+    color: #86BD4A;
+  }
+
+  .pink-text {
+    color: #D61D7D;
+  }
+
+  .teal-text {
+    color: #169D8F;
+  }
+
+  .yellow-text {
+    color: #BECA44;
+  }
+
+  .date {
+    // font-size: 20px;
+    // margin: 0 35%;
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+
+}
+
+.landing {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  flex-wrap: wrap;
+  // padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  div {
+    flex: 1 0 100%;
+  }
+
+  .logo {
+    margin-top: -5vh;
+    // height: 100vh;
+    max-width: 55vw;
+
+    @media screen and (max-width: 600px) {
+      max-width: 80vw;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .title .name {
+    font-size: 4em;
+  }
+  .date {
+    font-size: 1em;
+    margin: 0 20%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .title .name {
+    font-size: 6em;
+  }
+  .date {
+    font-size: 2em;
+    margin: 0 20%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .title .name {
+    font-size: 7em;
+  }
+  .date {
+    font-size: 3em;
+    margin: 0 20%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .title .name {
+    font-size: 8em;
+  }
+  .date {
+    font-size: 3em;
+    margin: 0 30%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .title .name {
+    font-size: 10em;
+  }
+}
+
+
+// Normal Random stuff
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+    font-family: 'Futura', "Trebuchet MS", 'Arial', 'sans-serif';
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px Sans-Serif;
+}
+h1 {
+  margin: 0 0 20px 0;
+  color: #008AFF;
+}
+p {
+  margin: 0 0 20px 0;
+}
