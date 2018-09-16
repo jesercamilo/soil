@@ -10,16 +10,16 @@ layout: default
   <img class="logo" src="assets/images/logo.png"/>
 </div>
 
-{% for post in site.posts %}
+{% for org in site.orgs %}
 <div class="row">
     <div class="col s12 m6">
       <div class="card">
         <div class="card-content">
-          <span class="card-title">{{ post.title }}</span>
-          <p>{{ post.excerpt }}</p>
+          <span class="card-title">{{ org.title }}</span>
+          <p>{{ org.excerpt }}</p>
         </div>
         <div class="card-action">
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ org.url | prepend: site.baseurl }}">
             Read More
           </a>
         </div>
