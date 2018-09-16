@@ -28,8 +28,13 @@ theme: minima
 plugins:
   - jekyll-feed
 
-sass:
-  style: compressed
+# sass:
+#   style: compressed
+
+collections:
+  orgs:
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
