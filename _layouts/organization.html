@@ -3,8 +3,9 @@
 
 {% include navbar %}
 
-<div class="container" {% if page.url != '/' %} id="main-section-with-buffer" {% endif %}>
-     {{ content }}
+
+<div class="container" id="main-section-with-buffer">
+  {{ content }}
 </div>
 
 {% include page-footer %}
