@@ -9,17 +9,17 @@ $(function() {
   $(document).ready(function(){
 
     // hide .navbar first
-    $(".navbar").hide();
+    $("#main-navbar-fade").hide();
 
-    // fade in .navbar
+    // fade in #main-navbar-fade
     $(function () {
         $(window).scroll(function () {
 
                  // set distance user needs to scroll before we start fadeIn
             if ($(this).scrollTop() > 100) {
-                $('.navbar').fadeIn();
+                $('#main-navbar-fade').fadeIn();
             } else {
-                $('.navbar').fadeOut();
+                $('#main-navbar-fade').fadeOut();
             }
         });
     });
