@@ -1,12 +1,11 @@
 {% include header.html %}
 
-
-{% include navbar %}
+{% include navbar.html %}
 
 <div class="container" {% if page.url != '/' %} id="main-section-with-buffer" {% endif %}>
      {{ content }}
 </div>
 
-{% include page-footer %}
+{% include page-footer.html %}
 
 {% include footer.html %}
