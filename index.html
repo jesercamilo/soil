@@ -10,20 +10,25 @@ layout: default
   <img class="logo" src="assets/images/logo.png"/>
 </div>
 
-{% for org in site.orgs %}
 <div class="row">
-    <div class="col s12 m6">
+	<div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+{% for org in site.orgs %}
+		<div class="carousel-item">
       <div class="card">
-        <div class="card-content">
-          <span class="card-title">{{ org.title }}</span>
-          <p>{{ org.excerpt }}</p>
+       	<div class="card-content">
+					<span class="card-title">{{ org.title }}</span>
+					<p>{{ org.excerpt }}</p>
         </div>
         <div class="card-action">
-          <a href="{{ org.url | prepend: site.baseurl }}">
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
-</div>
+         	<a href="{{ org.url | prepend: site.baseurl }}">
+           	Read More
+         	</a>
+       	</div>
+     	</div>
+		</div>
 {% endfor %}
+	</div>
+</div>
