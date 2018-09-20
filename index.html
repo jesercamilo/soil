@@ -15,6 +15,23 @@ layout: default
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">button</a>
     </div>
+		<div class="carousel-fixed-item center middle-indicator">
+    	<div class="left">
+				<a href="Previous" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
+					<i class="material-icons left  middle-indicator-text">
+						chevron_left
+					</i>
+				</a>
+     	</div>
+
+     	<div class="right">
+     		<a href="Next" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+					<i class="material-icons right middle-indicator-text">
+						chevron_right
+					</i>
+				</a>
+     	</div>
+    </div>
 {% for org in site.orgs %}
 		<div class="carousel-item">
       <div class="card">

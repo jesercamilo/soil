@@ -26,10 +26,24 @@ $(function() {
 
 });
 
-
+// start carousel with timeout
 $('.carousel-slider').carousel({fullWidth: true, padding:0},setTimeout(autoplay, 4500));
 function autoplay() {
 	$('.carousel').carousel('next');
 	setTimeout(autoplay, 7500);
-}}(jQuery));
+}
+
+// move to next carousel
+$('.moveNextCarousel').click(function(e){
+	e.preventDefault();
+	e.stopPropagation();
+	$('.carousel').carousel('next');
+});
+
+// move to prev carousel
+$('.movePrevCarousel').click(function(e){
+	e.preventDefault();
+	e.stopPropagation();
+	$('.carousel').carousel('prev');
+});}(jQuery));
 
