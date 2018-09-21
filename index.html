@@ -10,40 +10,40 @@ layout: default
   <img class="logo" src="assets/images/logo.png"/>
 </div>
 <div class="row">
-	<div class="carousel carousel-slider center">
+  <div class="carousel carousel-slider center">
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">button</a>
     </div>
 		<div class="carousel-fixed-item center middle-indicator">
-			<div class="left">
-				<a href="Previous" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
-					<i class="material-icons left  middle-indicator-text">
+      <div class="left">
+        <a href="Previous" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
+          <i class="material-icons left  middle-indicator-text">
 						chevron_left
-					</i>
+          </i>
 				</a>
-			</div>
-     	<div class="right">
-     		<a href="Next" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+      </div>
+      <div class="right">
+				<a href="Next" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
 					<i class="material-icons right middle-indicator-text">
-						chevron_right
+            chevron_right
 					</i>
 				</a>
-     	</div>
-  	</div>
+      </div>
+    </div>
 {% for org in site.orgs %}
-		<div class="carousel-item">
+    <div class="carousel-item">
       <div class="card">
-       	<div class="card-content">
+        <div class="card-content">
 					<span class="card-title">{{ org.title }}</span>
-					<p>{{ org.excerpt }}</p>
+					 <p>{{ org.excerpt }}</p>
         </div>
         <div class="card-action">
-         	<a href="{{ org.url | prepend: site.baseurl }}">
-           	Read More
-         	</a>
-       	</div>
-     	</div>
-		</div>
+          <a href="{{ org.url | prepend: site.baseurl }}">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
 {% endfor %}
-	</div>
+  </div>
 </div>
