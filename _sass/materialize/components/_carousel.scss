@@ -9,8 +9,8 @@
       }
 
       position: absolute;
-      left: 0;
-      right: 0;
+      left: 100px;
+      right: 100px;
       bottom: 20px;
       z-index: 1;
     }
@@ -21,7 +21,7 @@
       min-height: $carousel-height;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 163px;
 
       h2 {
         font-size: 24px;
